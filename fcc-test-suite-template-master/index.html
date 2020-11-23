@@ -7,8 +7,6 @@
   </head>
 
   <body>
-    <p>Hello World! We are Software Developers!</p>
-
     <div class="container">
       <h1 id="title">Website Feedback Survey</h1>
       <p id="description">Simple Survey form</p>
@@ -18,13 +16,30 @@
         <input type="text" id="name" placeholder="Name" required>
 
         <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Email" required>
+        <input type="email" id="email" placeholder="Email" required>
 
         <label for="number-label">Age (Optional)</label>
         <input type="number" id="number-label" placeholder="Age" required>
 
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Name" required>
+        <label for="content">How did you find out about our website?</label>
+        <select id="dropdown">
+          <option disable selected value>Select an option</option>
+          <option value="Instagram Ads"></option>
+          <option value="Newspaper and Magazines"></option>
+          <option value="Blogs and Gossip Articles"></option>
+          <option value="Twitter"></option>
+        </select>
+        <div id="radio-btns">
+          <p>How well does our website cater for your needs?</p>
+          <label for="extremely well">Extremely Well</label>
+          <input type="radio" name="satisfaction" value="extremely well">
+          <label for="very well">Very Well</label>
+          <input type="radio" name="satisfaction" value="very well">
+          <label for="somewhat well">Somewhat Well</label>
+          <input type="radio" name="satisfaction" value="somewhat well">
+          <label for="not so well">Not so Well</label>
+          <input type="radio" name="satisfaction" value="not so well">
+        </div>
       </form>
     </div>
 
