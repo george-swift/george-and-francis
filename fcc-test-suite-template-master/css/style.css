@@ -4,22 +4,28 @@
     margin: 0;
 }
 
-.container {
+header {
+    text-align: center;
+}
+
+#survey-form {
+    background-color: rgb(213, 216, 220);
     width: 70%;
     margin: 10px auto;
     padding: 10px;
 }
 
-form {
-    background-color: rgb(213, 216, 220);
-}
-
-#name, #email, select, #number-label  {
+#name, #email, select, #number {
     width: 100%;
 }
 
-#radio-btns, #checkboxes, #comment {
+#radio-btns, #checkboxes {
     display: inline-block;
+    margin: 10px;
+}
+
+#comment {
+    display: block;
     margin: 10px;
 }
 
@@ -34,4 +40,11 @@ input[type=submit] {
     background-color: rgb(52, 73, 95);
     color: #fff;
     padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    #survey-form {
+        width: 100%;
+        margin: 0;
+    }
 }
